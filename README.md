@@ -20,7 +20,7 @@ Atualmente, o site funciona melhor em telas de desktop e notebooks.
 ## 🚀 Deploy
 
 Visualize o site publicado aqui (link Vercel):  
-👉 [Acessar o site]()
+👉 [Acessar o site](https://2pac-tribute-website.vercel.app/)
 
 ## 🛠️ Tecnologias
 
