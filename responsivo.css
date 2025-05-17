@@ -1,0 +1,109 @@
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .cabecalho,
+    nav,
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cabecalho__lista,
+    .menu,
+    ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo,
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container,
+    .conteudo,
+    .box,
+    .section,
+    .coluna-esquerda,
+    .coluna-direita {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho__lista li {
+        margin: 8px 0;
+    }
+
+    .container,
+    .conteudo,
+    main,
+    .box,
+    .coluna {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem,
+    .galeria img,
+    .foto,
+    .disco {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .box,
+    .coluna,
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .box {
+        flex-wrap: wrap;
+    }
+
+    .coluna {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="legado.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+
+
+    <title>Legado 2pac</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html"><img src="img/Logo-2pac-white.png" alt="Logo do 2pac Shakur" class="logo"></a>
+        <nav class="informacoes">
+            <ul class="cabecalho__lista">
+                <li>
+                    <a href="legado.html">Legado</a>
+                </li>
+                <li>
+                    <a href="biografia.html">Biografia</a>
+                </li>
+                <li>
+                    <a href="discografia.html">Discografia</a>
+                </li>
+                <li>
+                    <a href="costa.oeste.html">Costa Oeste</a>
+                </li>
+                <li>
+                    <a href="galeria.html">Galeria</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="legado__conteudo">
+        <h1>O Legado Eterno de 2Pac</h1>
+        <p>Mais do que um ícone do rap, Tupac Shakur foi uma força cultural que moldou gerações. Com palavras afiadas,
+            espírito rebelde e uma alma visionária, Pac rompeu barreiras e deu voz aos marginalizados. Seu legado
+            atravessa décadas — nas ruas, nos palcos, nas telas e nos corações.</p>
+        <img src="img/2pac-destaque-legado1.jpg" alt="imagem 2pac preto e branco" class="imagem__destaque">
+    </main>
+
+    <section class="frases__2pac">
+        <h2>Frases Icônicas</h2>
+
+        <blockquote>"Reality is wrong. Dreams are for real."</blockquote>
+
+        <blockquote>"I'm not saying I'm gonna change the world, but I guarantee that I will spark the brain that will
+            change the world."</blockquote>
+
+        <blockquote>"During your life, never stop dreaming. No one can take away your dreams."</blockquote>
+    </section>
+
+    <section class="linha__tempo">
+        <h2>Linha do Tempo do Legado</h2>
+        <ul>
+            <li><strong>1996:</strong> Morte de Tupac Shakur em Las Vegas.</li>
+            <li><strong>1997:</strong> Lançamento póstumo do álbum <em>"R U Still Down? (Remember Me)"</em>.</li>
+            <li><strong>2003:</strong> Filme <em>"Tupac: Resurrection"</em> indicado ao Oscar de Melhor Documentário.
+            </li>
+            <li><strong>2012:</strong> Holograma de Tupac se apresenta no festival Coachella.</li>
+            <li><strong>2017:</strong> Tupac é introduzido no <em>Rock and Roll Hall of Fame</em>.</li>
+        </ul>
+        <img src="img/2pac-legado-destaques1.jpg" alt="" class="imagem__destaque2">
+    </section>
+
+    <section class="influencia__atual">
+        <h2>Influência na Cultura Atual</h2>
+
+        <p>Mesmo décadas após sua morte, Tupac Shakur permanece como uma das maiores vozes da música, da resistência e
+            da luta pelos direitos civis. Artistas como Kendrick Lamar, J. Cole e até movimentos sociais como Black
+            Lives Matter citam Tupac como uma grande inspiração.</p>
+
+        <p>Além da música, seu legado se estende a filmes, livros e documentários que continuam a contar sua história
+            para novas gerações.</p>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__background">
+            <h1 class="footer__titulo" id="parallax__title">MAKAVELI</h1>
+        </div>
+
+        <div class="footer__content">
+            <div class="footer__redes__sociais">
+                <p>Siga Makaveli</p>
+                <div class="footer__icons">
+                    <a href="https://www.youtube.com/user/2PacVEVO" target="_blank"><img src="img/youtube-icon.png"
+                            alt="YouTube" /></a>
+                    <a href="https://www.instagram.com/2pac/" target="_blank"><img src="img/instagram-icon.png"
+                            alt="Instagram" /></a>
+                    <a href="https://twitter.com/2PAC" target="_blank"><img src="img/twitter-icon.png"
+                            alt="Twitter" /></a>
+                    <a href="https://open.spotify.com/artist/1ZwdS5xdxEREPySFridCfh" target="_blank"><img
+                            src="img/spotify-icon.png" alt="Spotify" /></a>
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <ul>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Código de Conduta</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            <p>© 2025 por Henrique Aguiar. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const footer = document.querySelector(".footer");
+            const observer = new IntersectionObserver(
+                ([entry]) => {
+                    if (entry.isIntersecting) {
+                        footer.classList.add("footer__visible");
+                    }
+                },
+                { threshold: 0.3 }
+            );
+            observer.observe(footer);
+        });
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
