@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="biografia.css">
+    <title>Biografia 2pac</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html"><img src="img/Logo-2pac-white.png" alt="Logo do 2pac Shakur" class="logo"></a>
+        <nav class="informacoes">
+            <ul class="cabecalho__lista">
+                <li>
+                    <a href="legado.html">Legado</a>
+                </li>
+                <li>
+                    <a href="biografia.html">Biografia</a>
+                </li>
+                <li>
+                    <a href="discografia.html">Discografia</a>
+                </li>
+                <li>
+                    <a href="costa.oeste.html">Costa Oeste</a>
+                </li>
+                <li>
+                    <a href="galeria.html">Galeria</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="biografia">
+        <div class="container__biografia">
+            <h2>Tupac Amaru Shakur</h2>
+            <h3>RAPPER. ATOR. POETA. ATIVISTA. VISIONÁRIO.</h3>
+            <p>
+                Tupac Amaru Shakur, conhecido artisticamente como 2Pac, foi um dos rappers mais influentes da história
+                do hip-hop.
+                Nascido em 16 de junho de 1971, em Nova York, e assassinado em 13 de setembro de 1996, em Las Vegas,
+                Tupac deixou
+                um legado marcado por letras poderosas, críticas sociais e ativismo político. Seus álbuns, como "All
+                Eyez on Me" e
+                "Me Against the World", continuam sendo referência até os dias de hoje.
+            </p>
+            <img src="img/2pac-bio1.jpg" alt="RG de Tupac" class="biografia__imagem">
+        </div>
+
+        <div class="container__biografia">
+            <p>
+                Além da música, Tupac também atuou em filmes e foi uma voz ativa contra a desigualdade racial, a
+                brutalidade policial
+                e os problemas sociais enfrentados pelos afro-americanos. Sua morte precoce, aos 25 anos, permanece
+                envolta em mistério,
+                mas sua influência atravessa gerações.
+            </p>
+            <img src="img/2pac-bio4.jpg" alt="Jornal da época da morte de Tupac" class="biografia__imagem">
+        </div>
+
+        <div class="container__biografia">
+            <p>
+                Filho de Afeni Shakur, uma ativista dos Panteras Negras, Tupac cresceu cercado por ideais de resistência
+                e luta por justiça.
+                Sua criação foi profundamente marcada por questões sociais e políticas, o que refletiu fortemente em
+                suas músicas.
+            </p>
+            <img src="img/2pac-bio2.jpg" alt="Tupac olhando fixamente para a câmera" class="biografia__imagem">
+        </div>
+
+        <div class="container__biografia">
+            <p>
+                Mesmo após sua morte, Tupac permanece como um símbolo de rebeldia, consciência negra e criatividade
+                crua.
+                Teorias da conspiração, álbuns póstumos e homenagens continuam mantendo seu nome vivo,
+                consolidando-o como uma lenda imortal do hip-hop.
+            </p>
+            <img src="img/2pac-bio3.png" alt="Jornal da época da morte de Tupac" class="biografia__imagem">
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__background">
+            <h1 class="footer__titulo" id="parallax__title">MAKAVELI</h1>
+        </div>
+
+        <div class="footer__content">
+            <div class="footer__redes__sociais">
+                <p>Siga Makaveli</p>
+                <div class="footer__icons">
+                    <a href="https://www.youtube.com/user/2PacVEVO" target="_blank"><img src="img/youtube-icon.png"
+                            alt="YouTube" /></a>
+                    <a href="https://www.instagram.com/2pac/" target="_blank"><img src="img/instagram-icon.png"
+                            alt="Instagram" /></a>
+                    <a href="https://twitter.com/2PAC" target="_blank"><img src="img/twitter-icon.png"
+                            alt="Twitter" /></a>
+                    <a href="https://open.spotify.com/artist/1ZwdS5xdxEREPySFridCfh" target="_blank"><img
+                            src="img/spotify-icon.png" alt="Spotify" /></a>
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <ul>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Código de Conduta</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            <p>© 2025 por Henrique Aguiar. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const footer = document.querySelector(".footer");
+            const observer = new IntersectionObserver(
+                ([entry]) => {
+                    if (entry.isIntersecting) {
+                        footer.classList.add("footer__visible");
+                    }
+                },
+                { threshold: 0.3 }
+            );
+            observer.observe(footer);
+        });
+    </script>
+
+</body>
+
+</html>

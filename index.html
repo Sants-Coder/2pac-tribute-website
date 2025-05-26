@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <title>Tupac Shakur</title>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body class="home">
+
+    <header class="cabecalho">
+        <a href="index.html"><img src="img/Logo-2pac-white.png" alt="Logo do 2pac Shakur" class="logo"></a>
+        <nav class="informacoes">
+            <ul class="cabecalho__lista">
+                <li>
+                    <a href="legado.html">Legado</a>
+                </li>
+                <li>
+                    <a href="biografia.html">Biografia</a>
+                </li>
+                <li>
+                    <a href="discografia.html">Discografia</a>
+                </li>
+                <li>
+                    <a href="costa.oeste.html">Costa Oeste</a>
+                </li>
+                <li>
+                    <a href="galeria.html">Galeria</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudo__principal">
+        <div class="overlay"></div>
+        <section class="hero">
+            <h1 id="typewriter"></h1>
+            <h2>- Tupac Shakur</h2>
+            <p class="subtitulo">1971 – ∞<br>Legacy lives on.</p>
+            <button class="botao-scroll" onclick="scrollToContent()">Ver legado</button>
+        </section>
+    </main>
+
+    <section class="selo__2pac">
+        <img src="img/2pac__selo.png" alt="Selo representativo" class="imagem__selo">
+        <div class="descricao">
+            <p>"Só Deus pode julgar quem carrega nas palavras a dor de uma geração. Mais que um artista, uma voz que
+                desafiou o mundo com verdade, fúria e amor. Seu legado não está nas músicas — está na alma de quem nunca
+                se calou."</p>
+            <a class="botao__link" href="legado.html">LEGADO</a>
+        </div>
+    </section>
+
+
+    <section class="secao__biografia" id="Biografia">
+        <div class="biografia__container">
+            <div class="biografia__visual">
+                <img src="img/2pac visionary.jpg" alt="" />
+                <div class="biografia__frase">
+                    <h2><span class="vermelho">REVOLUÇÃO</span> É O QUE EU SOU</h2>
+                    <p>Mais que rimas, Tupac foi o grito de uma geração silenciada.</p>
+                    <a href="biografia.html" class="botao__leia">
+                        LEIA A BIOGRAFIA COMPLETA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="secao__discografia" id="secao__discografia">
+        <div class="discografia__conteudo">
+            <div class="carousel-container">
+                <button class="seta esquerda" onclick="scrollEsquerda()">&#10094;</button>
+
+                <div class="carousel" id="carousel">
+
+                    <div class="disco">
+                        <div class="album">
+                            <a href="https://open.spotify.com/album/1WBZyULtlANBKed7Zf9cDP" target="_blank">
+                                <img src="img/Disco 2pac 1.jpg" alt="Disco 1">
+                            </a>
+                        </div>
+                        <p class="album__titulo">2PAC - Greatest Hits</p>
+                    </div>
+
+                    <div class="disco">
+                        <div class="album">
+                            <a href="https://open.spotify.com/album/3OrucS4sHv6Bl9GS4rafEk" target="_blank">
+                                <img src="img/Disco 2pac 2.jpg" alt="Disco 2">
+                            </a>
+                        </div>
+                        <p class="album__titulo">2PAC - Me Against the World</p>
+                    </div>
+
+                    <div class="disco">
+                        <div class="album">
+                            <a href="https://open.spotify.com/album/7zURSbIVZ5vl3NIKkrVRvl" target="_blank">
+                                <img src="img/Disco 2pac 3.jpg" alt="Disco 3">
+                            </a>
+                        </div>
+                        <p class="album__titulo">2PAC - R U Still Down</p>
+                    </div>
+
+                    <div class="disco">
+                        <div class="album">
+                            <a href="https://open.spotify.com/album/2gWrUaBkh1uQARjbjvUGNp" target="_blank">
+                                <img src="img/disco 2pac 4.jpeg" alt="Disco 4">
+                            </a>
+                        </div>
+                        <p class="album__titulo">2PAC - The Don Killuminati</p>
+                    </div>
+
+                    <div class="disco">
+                        <div class="album">
+                            <a href="https://open.spotify.com/album/0D0MqHQ5ug0IPnxR0QdFXm" target="_blank">
+                                <img src="img/Disco 2pac 5.jpg" alt="Disco 5">
+                            </a>
+                        </div>
+                        <p class="album__titulo">2PAC - Still I Rise</p>
+                    </div>
+
+                    <div class="disco">
+                        <div class="album">
+                            <a href="https://open.spotify.com/album/17v0WKUfqS4lRiWslYyVWh" target="_blank">
+                                <img src="img/Disco 2pac 6.jpg" alt="Disco 6">
+                            </a>
+                        </div>
+                        <p class="album__titulo">2PAC - The Rose That Grew From Concrete</p>
+                    </div>
+
+                    <div class="disco">
+                        <div class="album">
+                            <a href="https://open.spotify.com/album/5Ijk8JGsEkwCZd5i0Iy09a" target="_blank">
+                                <img src="img/Disco 2pac 7.jpg" alt="Disco 7">
+                            </a>
+                        </div>
+                        <p class="album__titulo">2PAC - 2Pacalypse Now</p>
+                    </div>
+
+                    <div class="disco">
+                        <div class="album">
+                            <a href="https://open.spotify.com/album/3SKvJSOPstZFVlIo0NdxAd" target="_blank">
+                                <img src="img/Disco 2pac 8.jpg" alt="Disco 8">
+                            </a>
+                        </div>
+                        <p class="album__titulo">2PAC - Strictly 4 My N.I.G.G.A.Z...</p>
+                    </div>
+
+                    <div class="disco">
+                        <div class="album">
+                            <a href="https://open.spotify.com/album/29STRG7wIt5L41sGuCMeyJ" target="_blank">
+                                <img src="img/Disco 2pac 9.jpg" alt="Disco 9">
+                            </a>
+                        </div>
+                        <p class="album__titulo">THUG LIFE - Volume 1</p>
+                    </div>
+
+                    <div class="disco">
+                        <div class="album">
+                            <a href="https://open.spotify.com/album/78iX7tMceN0FsnmabAtlOC" target="_blank">
+                                <img src="img/Disco 2pac 10.jpg" alt="Disco 10">
+                            </a>
+                        </div>
+                        <p class="album__titulo">2PAC - All Eyez On Me</p>
+                    </div>
+
+                </div>
+
+                <button class="seta__direita" onclick="scrollDireita()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="informacao__discografia">
+        <div class="frase__destaque__disco">
+            <h3>"Voice of the Streets, Heart of a <span style="color: var(--dourado)">Warrior</span>"</h3>
+            <p>"Before the wars and betrayals, he rhymed for the broken, for the queens, for the dreamers. His albums
+                weren't just music — they were a lifeline for a world craving truth."</p>
+            <p>- Tupac Shakur</p>
+            <a href="discografia.html" class="link__disco">Veja a discografia completa</a>
+        </div>
+    </section>
+
+
+
+    <section class="secao_costa_oeste">
+        <div class="descricoes__costa__oeste">
+            <h2 class="destaque__titulo">O Rei da Costa Oeste</h2>
+            <p class="destaque__descricao">Em meio às palmeiras, ao som do G-Funk e das ruas de Los Angeles, Tupac
+                eternizou a alma da Costa Oeste — misturando poesia crua, ativismo e atitude em cada verso</p>
+        </div>
+
+        <div class="scroll__indicator">
+            <button id="scrollBtn">&#x2193;</button>
+        </div>
+
+        <section id="westcoast__info" class="hidden__section">
+            <p class="animated__caption">
+                Referência à essência da West Coast Rap Scene e à influência marcante do 2Pac nesse movimento.
+                <a href="costa.oeste.html">Saiba mais</a>
+            </p>
+        </section>
+    </section>
+
+    <section class="secao__galeria" id="galeria">
+        <h2 class="titulo__secao">Galeria 2pac</h2>
+        <p class="paragrafo__secao">Retratos, momentos históricos e homenagens artísticas que eternizam a lenda.</p>
+
+        <div class="galeria__preview">
+            <div class="foto__secao">
+                <img src="img/2pac-galeria1.jpg" alt="arte do 2Pac com nome personalizado"
+                    onclick="abrirLightbox(this)">
+                <p>A voz de um povo</p>
+            </div>
+            <div class="foto__secao">
+                <img src="img/2pac-galeria2.jpg" alt="foto do 2Pac refletindo" onclick="abrirLightbox(this)">
+                <p>ecoa no palco</p>
+            </div>
+            <div class="foto__secao">
+                <img src="img/2pac-galeria3.jpg" alt="foto do 2pac de lado" onclick="abrirLightbox(this)">
+                <p>transcende o tempo</p>
+            </div>
+            <div class="foto__secao">
+                <img src="img/2pac-galeria4.jpg" alt="2Pac com a bandana vermelha e charuto"
+                    onclick="abrirLightbox(this)">
+                <p>e releva a verdade por trás das aparências</p>
+            </div>
+        </div>
+        <a href="galeria.html" class="botao__galeria">Ver galeria completa</a>
+
+        <div id="lightbox" class="lightbox" onclick="fecharLightbox()">
+            <img id="imagemAmpliada" src="" alt="Imagem ampliada">
+        </div>
+    </section>
+
+
+    <!--
+     <section class="marco__final">
+        <div class="conteudo__marco">
+            <h1>Imortal na Voz, Eterno na Luta</h1>
+            <p>Tupac não foi só um artista. Foi a voz de um povo, o grito de uma geração esquecida e a alma de quem
+                nunca se calou.</p>
+            <blockquote>“They got money for wars, but can’t feed the poor.”</blockquote>
+        </div>
+    </section>
+
+    -->
+
+    <footer class="footer">
+        <div class="footer__background">
+            <h1 class="footer__titulo" id="parallax__title">MAKAVELI</h1>
+        </div>
+
+        <div class="footer__content">
+            <div class="footer__redes__sociais">
+                <p>Siga Makaveli</p>
+                <div class="footer__icons">
+                    <a href="https://www.youtube.com/user/2PacVEVO" target="_blank"><img src="img/youtube-icon.png"
+                            alt="YouTube" /></a>
+                    <a href="https://www.instagram.com/2pac/" target="_blank"><img src="img/instagram-icon.png"
+                            alt="Instagram" /></a>
+                    <a href="https://twitter.com/2PAC" target="_blank"><img src="img/twitter-icon.png"
+                            alt="Twitter" /></a>
+                    <a href="https://open.spotify.com/artist/1ZwdS5xdxEREPySFridCfh" target="_blank"><img
+                            src="img/spotify-icon.png" alt="Spotify" /></a>
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <ul>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Código de Conduta</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            <p>© 2025 por Henrique Aguiar. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+
+        const text = `"Reality is wrong. Dreams are for real."`;
+        const target = document.getElementById("typewriter");
+        let index = 0;
+
+        function typeEffect() {
+            if (index < text.length) {
+                target.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeEffect, 80);
+            }
+        }
+
+        window.onload = typeEffect;
+
+        function scrollToContent() {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: "smooth"
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const selo = document.querySelector(".selo__2pac");
+            selo.style.opacity = 0;
+            selo.style.transform = "translateY(40px)";
+            selo.style.transition = "all 0.8s ease-in-out";
+
+            setTimeout(() => {
+                selo.style.opacity = 1;
+                selo.style.transform = "translateY(0)";
+            }, 300);
+        });
+
+        const carousel = document.getElementById('carousel');
+
+
+        function scrollDireita() {
+            carousel.scrollBy({ left: 400, behavior: 'smooth' });
+        }
+
+        function scrollEsquerda() {
+            carousel.scrollBy({ left: -400, behavior: 'smooth' });
+        }
+
+        document.getElementById("scrollBtn").addEventListener("click", function () {
+            const targetSection = document.getElementById("westcoast__info");
+
+            targetSection.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+
+
+            setTimeout(() => {
+                targetSection.classList.add("show__section");
+            }, 500);
+        });
+
+
+        function abrirLightbox(imagem) {
+            const lightbox = document.getElementById('lightbox');
+            const imagemAmpliada = document.getElementById('imagemAmpliada');
+
+            imagemAmpliada.src = imagem.src;
+            lightbox.style.display = 'flex';
+
+            document.body.style.overflow = 'hidden';
+        }
+
+        function fecharLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+
+            document.body.style.overflow = 'auto';
+            document.body.style.overflowX = 'hidden';
+        }
+
+
+
+        window.addEventListener("load", () => {
+            const footer = document.querySelector(".footer");
+            const titulo = document.querySelector(".footer__titulo");
+
+            footer.classList.add("footer__visible");
+            setTimeout(() => {
+                titulo.classList.add("footer__titulo--visible");
+            }, 100);
+        });
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

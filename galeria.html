@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsivo.css">
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="galeria.css">
+  <title>Galeria 2pac</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <a href="index.html"><img src="img/Logo-2pac-white.png" alt="Logo do 2pac Shakur" class="logo"></a>
+    <nav class="informacoes">
+      <ul class="cabecalho__lista">
+        <li>
+          <a href="legado.html">Legado</a>
+        </li>
+        <li>
+          <a href="biografia.html">Biografia</a>
+        </li>
+        <li>
+          <a href="discografia.html">Discografia</a>
+        </li>
+        <li>
+          <a href="costa.oeste.html">Costa Oeste</a>
+        </li>
+        <li>
+          <a href="galeria.html">Galeria</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="galeria">
+    <h1>Galeria 2Pac</h1>
+    <p>Retratos, momentos históricos e homenagens artísticas que eternizam a lenda.</p>
+
+    <div class="grid__galeria">
+      <div class="card__foto">
+        <img src="img/2pac-galeria1.jpg" alt="arte do 2Pac com nome personalizado" onclick="abrirLightbox(this)">
+        <p>A voz que nasceu do gueto,</p>
+      </div>
+      <div class="card__foto">
+        <img src="img/2pac-galeria2.jpg" alt="foto do 2Pac refletindo" onclick="abrirLightbox(this)">
+        <p>ecoou contra o silêncio imposto,</p>
+      </div>
+      <div class="card__foto">
+        <img src="img/2pac-galeria3.jpg" alt="foto do 2pac de lado" onclick="abrirLightbox(this)">
+        <p>rompeu o tempo com sua verdade crua,</p>
+      </div>
+      <div class="card__foto">
+        <img src="img/2pac-galeria4.jpg" alt="2Pac com a bandana vermelha e charuto" onclick="abrirLightbox(this)">
+        <p>e se fez eterna na alma de uma geração.</p>
+      </div>
+      <div class="card__foto">
+        <img src="img/2pac-galeria5.jpg" alt="Montagem 2pac ao lado de Marilyn Monroe" onclick="abrirLightbox(this)">
+        <p>Dois mundos, uma lenda</p>
+      </div>
+      <div class="card__foto">
+        <img src="img/2pac-galeria6.jpg" alt="2pac e Rihanna" onclick="abrirLightbox(this)">
+        <p>Montagem que une o passado lendário de Tupac ao brilho contemporâneo de Rihanna</p>
+      </div>
+      <div class="card__foto">
+        <img src="img/2pac-galeria7.jpg" alt="Tupac Shakur e Afeni Shakur Davis" onclick="abrirLightbox(this)">
+        <p>Inesquecível Afeni Shakur Davis</p>
+      </div>
+      <div class="card__foto">
+        <img src="img/2pac-galeria8.jpg" alt="2pac e Faith Evans" onclick="abrirLightbox(this)">
+        <p>Silêncios entre versos e segredos não ditos</p>
+      </div>
+      <div class="card__foto">
+        <img src="img/2pac-galeria9.jpg" alt="2pac e Suge Knight" onclick="abrirLightbox(this)">
+        <p>Imagen que transcende o tempo.</p>
+      </div>
+      <div class="card__foto">
+        <img src="img/2pac-galeria10.jpg"
+          alt="Tupac vestindo uma camisa de basquete azul e olhando fixamente para a câmera"
+          onclick="abrirLightbox(this)">
+        <p>Olhar afiado, postura firme — o jogo dele sempre foi maior que as quadras.</p>
+      </div>
+      <div class="card__foto">
+        <img src="img/2pac-galeria11.jpg" alt="Tupac sorrindo, falando ao telefone e segurando maços de dinheiro"
+          onclick="abrirLightbox(this)">
+        <p>Entre notas e telefonemas, um retrato cru da ambição em um mundo desigual.</p>
+      </div>
+      <div class="card__foto">
+        <img src="img/2pac-galeria12.jpg"
+          alt="Tupac Shakur na capa da revista The Source, encarando a câmera com expressão séria, usando bandana branca e corrente dourada, representando força e rebeldia em meio ao caos dos anos 90."
+          onclick="abrirLightbox(this)">
+        <p>Na capa da The Source — "Trial by Fire". Um símbolo de resistência, arte e revolução hip-hop.</p>
+      </div>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="fecharLightbox()">
+      <img id="imagemAmpliada" src="" alt="Imagem ampliada">
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__background">
+      <h1 class="footer__titulo" id="parallax__title">MAKAVELI</h1>
+    </div>
+
+    <div class="footer__content">
+      <div class="footer__redes__sociais">
+        <p>Siga Makaveli</p>
+        <div class="footer__icons">
+          <a href="https://www.youtube.com/user/2PacVEVO" target="_blank"><img src="img/youtube-icon.png"
+              alt="YouTube" /></a>
+          <a href="https://www.instagram.com/2pac/" target="_blank"><img src="img/instagram-icon.png"
+              alt="Instagram" /></a>
+          <a href="https://twitter.com/2PAC" target="_blank"><img src="img/twitter-icon.png" alt="Twitter" /></a>
+          <a href="https://open.spotify.com/artist/1ZwdS5xdxEREPySFridCfh" target="_blank"><img
+              src="img/spotify-icon.png" alt="Spotify" /></a>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <ul>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">Código de Conduta</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__copyright">
+      <p>© 2025 por Henrique Aguiar. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    function abrirLightbox(imagem) {
+      const lightbox = document.getElementById('lightbox');
+      const imagemAmpliada = document.getElementById('imagemAmpliada');
+
+      imagemAmpliada.src = imagem.src;
+      lightbox.style.display = 'flex';
+
+      document.body.style.overflow = 'hidden';
+    }
+
+    function fecharLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+
+      document.body.style.overflow = 'auto';
+      document.body.style.overflowX = 'hidden';
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const footer = document.querySelector(".footer");
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            footer.classList.add("footer__visible");
+          }
+        },
+        { threshold: 0.3 }
+      );
+      observer.observe(footer);
+    });
+
+  </script>
+
+</body>
+
+</html>
